@@ -17,11 +17,10 @@ services:
     volumes:
       - ./api:/app
       - api_bundle:/usr/local/bundle
+    env_file:
+      - ./api/.env
     environment:
       - DATABASE_URL=postgres://postgres:postgres@db:5432/weather_forecaster_development
-      - RAILS_ENV=${RAILS_ENV:-development}
-      - WEATHER_API_KEY=${WEATHER_API_KEY}
-      - FRONTEND_URL=${FRONTEND_URL:-http://localhost:5173}
     ports:
       - "3001:3000"
     depends_on:
