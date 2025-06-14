@@ -15,12 +15,13 @@ ActiveRecord::Schema[8.0].define(version: 2025_06_12_194407) do
   enable_extension "pg_catalog.plpgsql"
 
   create_table "locations", force: :cascade do |t|
-    t.string "address"
+    t.string "address", null: false
     t.decimal "latitude"
     t.decimal "longitude"
-    t.string "zip_code"
+    t.string "zip_code", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["zip_code"], name: "index_locations_on_zip_code", unique: true
   end
 
   create_table "weather_forecasts", force: :cascade do |t|

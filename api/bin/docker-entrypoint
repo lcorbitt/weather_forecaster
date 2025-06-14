@@ -6,9 +6,15 @@ if [ -z "${LD_PRELOAD+x}" ]; then
     export LD_PRELOAD
 fi
 
-# If running the rails server then create or migrate existing database
-if [ "${@: -2:1}" == "./bin/rails" ] && [ "${@: -1:1}" == "server" ]; then
-  ./bin/rails db:prepare
-fi
+# Wait for database to be ready
+echo "Waiting for database..."
+while ! bundle exec rails db:version > /dev/null 2>&1; do
+  echo "Database not ready - sleeping 1 second"
+  sleep 1
+done
+echo "Database is ready!"
+
+# Always prepare the database on startup
+bundle exec rails db:prepare
 
 exec "${@}"
