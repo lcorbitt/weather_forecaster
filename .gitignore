@@ -1,0 +1,80 @@
+# Editor and OS files
+.cursorrules
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*~
+*.swp
+*.swo
+
+# Environment files
+.env
+.env.*
+
+# Frontend
+frontend/node_modules
+frontend/dist
+frontend/dist-ssr
+frontend/*.local
+frontend/.next
+frontend/.nuxt
+frontend/.vuepress/dist
+frontend/.serverless
+frontend/.docusaurus
+
+# Frontend logs
+frontend/logs
+frontend/*.log
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/lerna-debug.log*
+
+# Rails API
+api/.bundle
+api/log/*
+!api/log/.keep
+api/tmp/*
+!api/tmp/.keep
+!api/tmp/pids/.keep
+!api/tmp/storage/
+!api/tmp/storage/.keep
+
+# Rails storage
+api/storage/*
+!api/storage/.keep
+api/public/storage
+api/public/assets
+api/public/uploads
+
+# Rails secrets and credentials
+api/config/master.key
+api/config/credentials/*.key
+
+# Rails cache and temp files
+api/*.cache
+
+# Rails schema and database files
+api/db/cache_schema.rb
+api/db/queue_schema.rb
+api/db/cable_schema.rb
+
+# Generated binstubs (except Rails default ones)
+api/bin/*
+!api/bin/bundle
+!api/bin/rails
+!api/bin/rake
+!api/bin/setup
+!api/bin/dev
+!api/bin/docker-entrypoint
+
+# Test files
+.rspec_status
+.byebug_history

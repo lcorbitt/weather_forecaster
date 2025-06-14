@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=90210
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - WeatherForecaster Rails App
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 12 Jun 2025 20:51:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1146'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: UTF-8
+      string: '[{"place_id":353660822,"licence":"Data © OpenStreetMap contributors,
+        ODbL 1.0. http://osm.org/copyright","lat":"34.0942491","lon":"-118.4114301","class":"place","type":"postcode","place_rank":21,"importance":0.12000999999999995,"addresstype":"postcode","name":"90210","display_name":"90210,
+        Los Angeles County, California, United States","address":{"postcode":"90210","county":"Los
+        Angeles County","state":"California","ISO3166-2-lvl4":"US-CA","country":"United
+        States","country_code":"us"},"boundingbox":["34.0442491","34.1442491","-118.4614301","-118.3614301"]},{"place_id":353628366,"licence":"Data
+        © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","lat":"48.3571714","lon":"22.3679622","class":"place","type":"postcode","place_rank":21,"importance":0.12000999999999995,"addresstype":"postcode","name":"90210","display_name":"90210,
+        Svoboda, Batovo Settlement Hromada, Berehove Raion, Ukraine","address":{"postcode":"90210","village":"Svoboda","municipality":"Batovo
+        Settlement Hromada","district":"Berehove Raion","country":"Ukraine","country_code":"ua"},"boundingbox":["48.3071714","48.4071714","22.3179622","22.4179622"]}]'
+  recorded_at: Thu, 12 Jun 2025 20:51:56 GMT
+recorded_with: VCR 6.3.1

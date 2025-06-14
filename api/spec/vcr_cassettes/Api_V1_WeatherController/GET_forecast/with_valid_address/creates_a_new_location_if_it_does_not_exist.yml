@@ -1,0 +1,99 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=90210
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - WeatherForecaster Rails App
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 12 Jun 2025 20:51:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1146'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: UTF-8
+      string: '[{"place_id":353660822,"licence":"Data © OpenStreetMap contributors,
+        ODbL 1.0. http://osm.org/copyright","lat":"34.0942491","lon":"-118.4114301","class":"place","type":"postcode","place_rank":21,"importance":0.12000999999999995,"addresstype":"postcode","name":"90210","display_name":"90210,
+        Los Angeles County, California, United States","address":{"postcode":"90210","county":"Los
+        Angeles County","state":"California","ISO3166-2-lvl4":"US-CA","country":"United
+        States","country_code":"us"},"boundingbox":["34.0442491","34.1442491","-118.4614301","-118.3614301"]},{"place_id":353628366,"licence":"Data
+        © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","lat":"48.3571714","lon":"22.3679622","class":"place","type":"postcode","place_rank":21,"importance":0.12000999999999995,"addresstype":"postcode","name":"90210","display_name":"90210,
+        Svoboda, Batovo Settlement Hromada, Berehove Raion, Ukraine","address":{"postcode":"90210","village":"Svoboda","municipality":"Batovo
+        Settlement Hromada","district":"Berehove Raion","country":"Ukraine","country_code":"ua"},"boundingbox":["48.3071714","48.4071714","22.3179622","22.4179622"]}]'
+  recorded_at: Thu, 12 Jun 2025 20:51:16 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=New%20Address
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - WeatherForecaster Rails App
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 12 Jun 2025 20:51:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3063'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: UTF-8
+      string: '[{"place_id":332370795,"licence":"Data © OpenStreetMap contributors,
+        ODbL 1.0. http://osm.org/copyright","osm_type":"node","osm_id":4635978152,"lat":"40.6254079","lon":"-73.9400639","class":"place","type":"house","place_rank":30,"importance":9.175936522464359e-05,"addresstype":"place","name":"address","display_name":"address,
+        1824, Flatbush Avenue, Flatlands, Brooklyn, Kings County, New York, 11210,
+        United States","address":{"place":"address","house_number":"1824","road":"Flatbush
+        Avenue","suburb":"Flatlands","borough":"Brooklyn","county":"Kings County","city":"New
+        York","state":"New York","ISO3166-2-lvl4":"US-NY","postcode":"11210","country":"United
+        States","country_code":"us"},"boundingbox":["40.6253579","40.6254579","-73.9401139","-73.9400139"]},{"place_id":222344023,"licence":"Data
+        © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"node","osm_id":6290569385,"lat":"16.4546879","lon":"107.5691639","class":"tourism","type":"guest_house","place_rank":30,"importance":6.297627222090512e-05,"addresstype":"tourism","name":"Kim’s
+        Homestay new","display_name":"Kim’s Homestay new, 191, Bùi Thị Xuân, Phường
+        Phường Đúc, Thuận Hóa District, Huế, Hue City, 54000, Vietnam","address":{"tourism":"Kim’s
+        Homestay new","house_number":"191","road":"Bùi Thị Xuân","quarter":"Phường
+        Phường Đúc","suburb":"Thuận Hóa District","city":"Huế","state":"Hue City","ISO3166-2-lvl4":"VN-26","postcode":"54000","country":"Vietnam","country_code":"vn"},"boundingbox":["16.4546379","16.4547379","107.5691139","107.5692139"]},{"place_id":230084031,"licence":"Data
+        © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":1314558544,"lat":"22.5891887","lon":"88.4520704","class":"landuse","type":"residential","place_rank":22,"importance":0.1067400709544518,"addresstype":"residential","name":"Rohra
+        Address","display_name":"Rohra Address, Action Area I, Ghuni, Bidhannagar,
+        North 24 Parganas, West Bengal, India","address":{"residential":"Rohra Address","suburb":"Action
+        Area I","town":"Ghuni","county":"Bidhannagar","state_district":"North 24 Parganas","state":"West
+        Bengal","ISO3166-2-lvl4":"IN-WB","country":"India","country_code":"in"},"boundingbox":["22.5885875","22.5898555","88.4516680","88.4525096"]},{"place_id":399702451,"licence":"Data
+        © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"way","osm_id":1361059665,"lat":"28.4259279","lon":"77.4794884","class":"landuse","type":"residential","place_rank":22,"importance":0.1067182536049439,"addresstype":"residential","name":"The
+        Golf Address","display_name":"The Golf Address, Noida, Gari Samastpur, Gautam
+        Buddha Nagar, Uttar Pradesh, 201306, India","address":{"residential":"The
+        Golf Address","city":"Noida","village":"Gari Samastpur","county":"Gautam Buddha
+        Nagar","state_district":"Gautam Buddha Nagar","state":"Uttar Pradesh","ISO3166-2-lvl4":"IN-UP","postcode":"201306","country":"India","country_code":"in"},"boundingbox":["28.4249350","28.4275537","77.4783138","77.4805994"]}]'
+  recorded_at: Thu, 12 Jun 2025 20:51:17 GMT
+recorded_with: VCR 6.3.1
