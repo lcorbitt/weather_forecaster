@@ -58,5 +58,5 @@ The API includes comprehensive tests/specs:
 
 **API Tests:**
 ```bash
-docker compose exec api bundle exec rspec
+cd api && RAILS_ENV=test bundle exec rails db:prepare && bundle exec rspec
 ```
